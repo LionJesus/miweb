@@ -1,21 +1,3 @@
-/** {
-  width: tamaño;
-  height: tamaño;
-  padding: 10px;
-  padding-top: 10px;
-  padding-right: 13px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  padding: 10px 13px 5px 15px;
-  margin: 10px;
-  margin-top: 10px;
-  margin-right: 13px;
-  margin-left: 15px;
-  margin-bottom: 5px;
-  margin: 10px 13px 5px 15px;
-  border: 2px solid red;
-}*/
-
 body {
   font-family: 'Allerta', sans-serif;
   margin: 0;
@@ -74,12 +56,6 @@ input:focus, textarea:focus {
   font-size: 18px;
   background: #fd324e;
   background: linear-gradient(to left, #fe344e, #ff7250);
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
-  /*background: rgb(243,197,189); /* Old browsers */
-  /* background: -moz-linear-gradient(top,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
-  background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
 
 }
 
@@ -104,12 +80,12 @@ input:focus, textarea:focus {
   margin-bottom: 20px;
 }
 
-.guitarras {
+.hosting {
   color: #1F313C;
   margin-bottom: 60px;
 }
 
-.guitarras h2 {
+.hosting2 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
 }
@@ -158,17 +134,16 @@ input:focus, textarea:focus {
 }
 
 
-.guitarra {
+.hosting {
   margin: 10px 10px 40px 10px;
   padding: 10px;
-  /*overflow: hidden;*/
   border: 1px solid #1F313C;
   border-radius: 8px;
 }
-.guitarra ol {
+.hosting ol {
   padding: 0;
 }
-.guitarra.b {
+.hosting.b {
   height: 190px;
 }
 
@@ -184,10 +159,10 @@ input:focus, textarea:focus {
   position: relative;
 }
 
-.contenedor-guitarra-a {
+.contenedor-hosting-a {
   padding-left: 20px;
 }
-.contenedor-guitarra-b {
+.contenedor-hosting-b {
   margin-left: 370px;
   position: relative;
   bottom: 90px;
@@ -200,7 +175,7 @@ input:focus, textarea:focus {
 
 
 .footer {
-  background: #273b47;
+  background: #190e5d;
   padding: 50px 10px;
 }
 
