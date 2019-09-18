@@ -1,107 +1,371 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Nionsoft</title>
-    <meta charset="utf-8"/>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css"/>
-  </head>
-  <body>
-    <section id="portada" class="portada background"> <!-- portada -->
-      <header id="header" class="header contenedor"> <!-- header -->
-        <figure class="logotipo"> <!-- logotipo -->
-          <img src="images/logo.png" width="186" height="60" alt="Hosting Logo"/>
-        </figure>
-        <nav class="menu"> <!-- menu -->
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="#hosting">Hosting</a>
-            </li>
-            <li>
-              <a href="precios.html">Precios</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="contenedor">
-        <h1 class="titulo">Hosting de alta <span>velocidad</span></h1><!-- titulo -->
-        <h3 class="title-a">Te ofrecemos opciones a tu medida. Elegí tu plan y contratalo ahora!</h3><!-- resumen -->
-        <a class="button" href="#hosting">Conoce mas</a><!-- boton -->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Framework Skeleton -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <!-- Iniciamos los Custom Style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style-tabla.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Efecto de tablas -->
+  <script src="assets/js/modernizr.js"></script>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <title>Nionsoft - LandingPage</title>
+</head>
+
+<body>
+	<!-- Inicio del header -->
+	<header style="background-image: url(assets/images/background.png);background-size: cover;">
+		<div id="home" class="container">
+			<div class="row">
+				<!-- Inicio navbar-->
+				<div class="navBar" id="mainNavBar">
+				  <a href="#"><img src="assets/images/logo.png"></a>
+				  <div class="menu u-pull-right">
+				  <a href="#home">Home</a>
+				  <a href="#nosotros">Nosotros</a>
+				  <a href="#precios">Precios</a>
+				  <a href="#contacto">Contacto</a>
+				  <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
+				  </div>
+				</div>
+				<!-- Fin navbar-->
+			</div>
+			<div  class="row">
+				<div class="texto-header">
+					<h1 class="titulo">Hosting de alta <span>velocidad</span></h1><!-- titulo -->
+					<h5 class="title-a">Te ofrecemos opciones a tu medida. Elegí tu plan y contratalo ahora!</h3>
+					<!-- resumen -->
+					<a class="button button-primary" href="#hosting">Conoce mas</a><!-- boton -->
+			    </div>
+			</div>
+		</div>
+	</header>
+	<!-- Fin del header -->
+	<!-- Primera sección -->
+	<section>
+		<div id="nosotros" class="container">
+			<div class="row">
+				<div  class="titulo">
+					<h4>Nosotros</h4>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="six columns">
+				Somos una empresa que ofrece un servicio de hosting basado en la calidad, la excelencia y la atención 100% personalizada. El trato cercano que brindamos a nuestros clientes es uno de los valores más importantes que sostenemos como compañía, ya que consideramos que alcanzar con ellos una relación de confianza nos permite cumplir nuestro principal objetivo: acompañarlos en las diferentes etapas de crecimiento de sus proyectos web.
+			  </div>
+			  <div class="six columns">
+				Queremos que nuestros servicios sean los mejores del rubro, y por esa razón observamos los cambios y las evoluciones del mercado de manera constante, para perfeccionarnos día a día. Trabajamos para brindarle a nuestros clientes un servicio rápido, flexible y amigable, que evite burocracias y cuente con un mayor porcentaje de Uptime (hasta el momento nunca ha bajado de 99.8% al mes).
+			  </div>
+    </div>
+		</div>
+	</section>
+	<!-- Fin de la primera sección -->
+	<!-- Call action -->
+	<section class="color-principal text-center">
+		<div class="container">
+			<div class="row">
+				<div class="titulo">
+					<h4>Clientes</h4>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="twelve columns">
+				La gran mayoría de nuestros clientes se compone de programadores, diseñadores gráficos, compañías multidisciplinarias de vanguardia, PYMES, artistas y músicos.
+			  </div>
+			</div>
+		</div>
+	</section>
+	<!-- Fin Call action -->
+	<!-- Segunda sección -->
+	<section>
+		<div class="container">
+			<div class="row">
+			  <div id="precios" class="titulo text-center">
+				<h4>Nuestros servicios</h4>
+			  </div>
+			</div>
+			<div class="row">
+				<div class="cd-has-margins">
+		<div class="cd-pricing-switcher">
+			<p class="fieldset">
+				<input type="radio" name="duration-2" value="monthly" id="monthly-2" checked>
+				<label for="monthly-2">Mensual</label>
+				<input type="radio" name="duration-2" value="yearly" id="yearly-2">
+				<label for="yearly-2">Anual</label>
+				<span class="cd-switch"></span>
+			</p>
+		</div> 
+
+		<ul class="cd-pricing-list cd-bounce-invert">
+			<li>
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Basico</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">30</span>
+								<span class="cd-duration">pesos</span>
+							</div>
+						</header>
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>256MB</em> Memory</li>
+								<li><em>1</em> User</li>
+								<li><em>1</em> Website</li>
+								<li><em>1</em> Domain</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div> 
+
+						<footer class="cd-pricing-footer">
+							<a class="cd-select" href="#">Seleccionar</a>
+						</footer>  
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<h2>Basic</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">320</span>
+								<span class="cd-duration">yr</span>
+							</div>
+						</header>
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>256MB</em> Memory</li>
+								<li><em>1</em> User</li>
+								<li><em>1</em> Website</li>
+								<li><em>1</em> Domain</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div> 
+
+						<footer class="cd-pricing-footer">
+							<a class="cd-select" href="#">Comprar</a>
+						</footer> 
+					</li>
+				</ul> 
+			</li>
+
+			<li class="cd-popular">
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Popular</h2>
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">60</span>
+								<span class="cd-duration">pesos</span>
+							</div>
+						</header> 
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>512MB</em> Memory</li>
+								<li><em>3</em> Users</li>
+								<li><em>5</em> Websites</li>
+								<li><em>7</em> Domains</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div> 
+
+						<footer class="cd-pricing-footer">
+							<a class="cd-select" href="#">Comprar</a>
+						</footer>  
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<h2>Popular</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">630</span>
+								<span class="cd-duration">yr</span>
+							</div>
+						</header> 
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>512MB</em> Memory</li>
+								<li><em>3</em> Users</li>
+								<li><em>5</em> Websites</li>
+								<li><em>7</em> Domains</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+
+						<footer class="cd-pricing-footer">
+							<a class="cd-select" href="#">Comprar</a>
+						</footer>  
+					</li>
+				</ul> 
+			</li>
+
+			<li>
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Premier</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">90</span>
+								<span class="cd-duration">pesos</span>
+							</div>
+						</header> 
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>1024MB</em> Memory</li>
+								<li><em>5</em> Users</li>
+								<li><em>10</em> Websites</li>
+								<li><em>10</em> Domains</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+
+						<footer class="cd-pricing-footer">
+							<a class="cd-select" href="#">Comprar</a>
+						</footer>
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<h2>Premier</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">950</span>
+								<span class="cd-duration">yr</span>
+							</div>
+						</header> 
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>1024MB</em> Memory</li>
+								<li><em>5</em> Users</li>
+								<li><em>10</em> Websites</li>
+								<li><em>10</em> Domains</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+
+						<footer class="cd-pricing-footer">
+							<a class="cd-select" href="#">Comprar</a>
+						</footer> 
+					</li>
+				</ul> 
+			</li>
+		</ul> 
+	</div> 
+			</div>
+		</div>
+	</section>
+	<!-- Fin de la Segunda sección -->
+	<section id="contacto" class="color-secundario">
+	<div class="container">
+			<div class="row">
+			<div class="titulo text-center">
+				<h4>Contacto</h4>
+			  </div>
+			<div>
+			<div class="row">
+			<div class="six columns">
+				<form>
+      <div>
+        <label>Nombre</label>
+        <input class="u-full-width" type="text" placeholder="Enter name">
+		<label>Apellido</label>
+        <input class="u-full-width" type="text" placeholder="Enter name">
+		<label>Email</label>
+        <input class="u-full-width" type="email" placeholder="JhonDoe@domain.com">
+		<label>Asunto</label>
+        <select class="u-full-width">
+        <option value="1">Asunto 1</option>
+        <option value="2">Asunto 2</option>
+        <option value="3">Asunto 3</option>
+      </select>
       </div>
-    </section>
-    <section id="hosting" class="hosting2 contenedor"> <!-- Hosting -->
-      <h2>Nuestros servicios</h2><!-- titulo -->
-      <article class="hosting"> <!-- hosting 1 -->
-        <img class="derecha" src="images/hostinginicial.png" alt="Hosting Inicial" width="350"/>
-        <div class="contenedor-hosting-a">
-          <h3 class="title-b">Plan inicial</h3>
-          <ol>
-            <li>&#x2705; 70 espacio en disco GB</li>
-            <li>&#x2705; 1 base de datos</li>
-            <li>&#x2705; Ilimitadas cuentas de e-mail</li>
-          </ol>
-        </div>
-      </article>
-      <article class="hosting b"> <!-- hosting 2 -->
-        <img class="izquierda" src="images/hostingavanzado.png" alt="Hosting Avanzado" width="350"/>
-        <div class="contenedor-hosting-b">
-          <h3 class="title-b">Plan avanzado</h3>
-          <ol>
-            <li> &#x2705; 300 espacio en disco GB</li>
-            <li> &#x2705; Ilimitadas base de datos</li>
-            <li> &#x2705; Ilimitadas cuentas de FTP</li>
-			<li> &#x2705; Ilimitadas subdominios</li>
-			<li> &#x2705; Ilimitadas cuentas de e-mail</li>
-          </ol>
-        </div>
-      </article>
-    </section>
-    <footer class="footer">
-      <div class="contenedor">
-        <div class="contacto">
-          <img src="images/logofooter.png" alt="logotipo blanco"/>
-          <a href="tel:+541122531955"><strong>Telefono</strong> <span>1122531955</span></a>
-          <a href="mailto:info@lionhosting.com"><strong>E-mail</strong> <span>info@lionhosting.com</span></a>
-        </div>
-        <form class="formulario">
-          <div class="col1">
-            <label for="nombre">Nombre</label>
-            <input type="text" required id="nombre" name="nombre"/>
-            <label for="email">E-mail</label>
-            <input type="email" required id="email" name="email"/>
-            <div class="sexo">
-              <label for="mujer">
-                <input type="radio" id="mujer" checked name="sexo" value="mujer"> mujer
-              </label>
-              <label for="hombre">
-                <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
-              </label>
-            </div>
-            <div class="intereses">
-              <label for="cotizacion">
-                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
-              </label>
-              <label for="reclamos">
-                <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
-              </label>
-              <label for="comentarios">
-                <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
-              </label>
-              <label for="otros">
-                <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
-              </label>
-            </div>
-          </div>
-          <div class="col2">
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
-            <input type="submit" value="Enviar" class="button"/>
-          </div>
-        </form>
+      <div>
+        <label>Mensaje</label>
+        <textarea class="u-full-width" placeholder="Escribir mensaje"></textarea>
       </div>
-    </footer>
-  </body>
+      <input class="button-contact" type="submit" value="Enviar">
+    </form>
+			  </div>
+			  <div class="six columns">
+				<p>Si tiene alguna duda sobre nuestro servicio o necesita un plan a su medida por favor llámenos al <b> 0810-800-11111 (LIONHOSTING)</b> de Lunes a Viernes de 8:00 a 21:00 horas, o contáctenos vía web las 24 horas.</p>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.07030763407!2d-57.988189857172735!3d-34.92045289881356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sco!4v1568774974837!5m2!1ses!2sco" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			  </div>
+	
+	</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+			  <div class="one-third column">
+				<h5></h5>
+			  </div>
+			  <div class="one-third column">
+				<h5>Links</h5>
+			  </div>
+			  <div class="one-third column">
+				<h5>Contacto</h5>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="one-third column">
+				<img class="logo-footer" src="assets/images/logofooter.png">
+				<p>Nuestro objetivo es su crecimiento y nuestro compromiso es que eso ocurra.</p>
+			  </div>
+			  <div class="one-third column">
+				<ul>
+				  <li><a href="#home">Home</a></li>
+				  <li><a href="#nosotros">Nosotros</a></li>
+				  <li><a href="#precios">Precios</a></li>
+				  <li><a href="#contacto">Contacto</a></li>
+				</ul>
+			  </div>
+			  <div class="one-third column">
+				<p><i class="fa fa-phone"></i> <a href="tlf: +1 1113334444">+1 111-333-4444</p>
+				<p><i class="fa fa-envelope m-l-sm"></i> <a href="mailto: info@domain.com">info@domain.com</a></p>
+				<ul class="social-icons-ql">
+				   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				   <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				   <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				 </ul>
+			  </div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Fin Footer -->
+	<!-- Script Volver Boton -->
+
+
+</body>
+<script src="assets/js/jquery-2.1.1.js"></script>
+<script src="assets/js/main.js"></script>
 </html>

@@ -1,0 +1,137 @@
+/*Global*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+li {
+    margin-bottom: 0rem;
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.color-principal {
+    background: #21186b;
+    color: #fff;
+}
+.color-secundario {
+    background: #33C3F0;
+    color: #fff;
+}
+.button-contact {
+    background: #fff !important;
+    border: #fff !important;
+}
+body {
+	margin: 0;
+	color: #555;
+}
+/*NavBar*/
+.navBar{
+  overflow: hidden;
+}
+.navBar a{
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Tahoma;
+}
+.navBar a:hover{
+  color: #009cde;
+}
+.navBar .icon{
+  display: none;
+}
+.navBar .menu a{
+    line-height: 7rem;
+}
+/*Slider principal*/
+header .texto-header {
+	padding: 10% 0%;
+}
+header .texto-header h1, header .texto-header h2, header .texto-header h3, header .texto-header h4, header .texto-header h5, header .texto-header h6 {
+	color:#fff;
+}
+
+/*Secciones*/
+section {
+	padding: 35px 0;
+}
+
+
+/*Footer*/
+footer {
+	background: #21176a;
+    padding: 35px 0%;
+	color : #fff;
+}
+footer a {
+	color: #fff;
+}
+/*Redes*/
+.social-icons-ql li{
+	   list-style:none;
+	   float:left;
+	   text-align:center;
+	   margin:10px 10px;
+   }
+/*Query*/
+@media (max-width: 700px){
+.navBar img {
+	max-width: 130px
+}
+.navBar .menu a{
+    display: none;
+}
+.navBar .menu a{
+    line-height: 2rem;
+}
+.navBar .menu a.icon{
+    display: block; 
+	float: right;
+	margin-top: 10px;
+}
+.navBar.responsive {
+    position: relative;
+}
+.navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
