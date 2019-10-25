@@ -20,6 +20,8 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  width: 80%;
+  
 }
  /*Contenido*/
  article, aside, figure, footer, header, hgroup, 
@@ -32,6 +34,8 @@ body, html {
    font-family: verdana;
    margin: 25px auto;
    overflow: hidden;
+   width: 80%;
+  
  }
  #modal header {
    background: #f1f1f1;
@@ -167,3 +171,5 @@ table {
     font-style: italic;
     color: #96a2a7;
   }
+
+
