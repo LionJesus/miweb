@@ -27,14 +27,13 @@ body, html {
  article, aside, figure, footer, header, hgroup, 
  menu, nav, section { display: block; }
  #modal {
-   width: 600px;
    border: 1px solid #CCC;
    box-shadow: 0 1px 5px #CCC;
    border-radius: 5px;
    font-family: verdana;
    margin: 25px auto;
    overflow: hidden;
-   width: 80%;
+   width: 100%;
   
  }
  #modal header {
@@ -107,44 +106,6 @@ table {
  p.c {
     white-space: pre;
   }
-  /*Volver Arriba*/
-  #volver {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-  }
-  #volver::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
-  #volver:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
-  #volver:active {
-    background-color: #555;
-  }
-  #volver.show {
-    opacity: 1;
-    visibility: visible;
-  }
-  
   
   .content {
     width: 77%;
@@ -154,22 +115,8 @@ table {
     color: #6c767a;
     line-height: 1.9;
   }
-  @media (min-width: 500px) {
-    .content {
-      width: 43%;
-    }
-    #volver {
-      margin: 30px;
-    }
+  .card{
+    width: 600px;
   }
-  .content h1 {
-    margin-bottom: -10px;
-    color: #03a9f4;
-    line-height: 1.5;
-  }
-  .content h3 {
-    font-style: italic;
-    color: #96a2a7;
-  }
-
+  
 
